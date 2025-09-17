@@ -24,7 +24,10 @@ public class AlunoController {
         model.addAttribute("aluno", new Aluno());
         return "alunos";
     }
-
+    @GetMapping("/")
+    public String home() {
+        return "redirect:/alunos";
+    }    
     @PostMapping("/alunos/salvar")
     public String salvar(@ModelAttribute Aluno aluno) {
         repository.save(aluno);

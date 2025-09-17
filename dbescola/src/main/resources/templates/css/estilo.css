@@ -1,0 +1,100 @@
+/* Estilos gerais do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 2rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilização do Formulário de Cadastro */
+form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+form br {
+    display: none; /* Remove as quebras de linha para um layout mais fluido */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilização da Tabela de Produtos */
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Garante que as bordas arredondadas funcionem */
+}
+
+th, td {
+    border: 1px solid #e0e0e0;
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: #4a69bd;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e9ecef;
+}
